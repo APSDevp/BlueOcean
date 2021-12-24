@@ -12,5 +12,11 @@ pipeline {
       }
     }
 
+    stage('Python') {
+      steps {
+        bat 'python pyfile.py'
+      }
+    }
+
   }
 }
